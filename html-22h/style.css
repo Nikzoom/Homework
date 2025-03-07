@@ -1,0 +1,19 @@
+header {
+    background: burlywood;
+    height: 60px;
+    
+}
+#fdf {
+    background: aquamarine;
+    height: 100px;
+    width: 1000px
+    ;
+}
+footer {
+    background: darkmagenta;
+    height: 300px;
+    color: #fff;
+}
+.footer {
+    color: #fff;
+}
