@@ -10,7 +10,7 @@
     <title>Wake & bake</title>
 </head>
 
-<body class="body ">
+<body class="body">
     <div class="wrapper">
         <header class="header">
             <div class="header__top">
@@ -49,7 +49,7 @@
                     </div>
                 </div>
             </div>
-            <section class="hero-section">
+            <section class="header__hero-section hero-section">
                 <div class="container">
                     <div class="hero-section__inner">
                         <div class="hero-section__content">
@@ -85,7 +85,73 @@
                 </div>
             </section>
         </header>
-        <main class="main"></main>
+        <main class="main">
+            <section class="main__myinfo myinfo">
+                <div class="container">
+                    <div class="myinfo__inner">
+                        <div class="myinfo__img">
+                            <img src="./img/content/girl-2.jpg" alt="девушка с тортом в руках">
+                            <div class="myinfo__img-gift">
+                                <button href="#" class="myinfo__img-button">
+                                    <img src="./img/icons/gift.svg" alt="">
+                                </button>
+                                Нажми на подарок, чтобы получить наш фирменный рецепт
+                            </div>
+                        </div>
+                        <div class="myinfo__body">
+                            <div class="myinfo__heading">
+                                <h2 class="myinfo__title">
+                                    Наша школа —
+                                </h2>
+                                <p class="myinfo__title-text">
+                                    это уютный дом для начинающих кондитеров
+                                </p>
+                                <p class="myinfo__text">
+                                    С нами ты погрузишься в удивительный мир кондитерского искусства, получишь новые
+                                    знания и профессиональные навыки! Обретёшь веру в свои силы, научишься приготовлению
+                                    разнообразных современных и классических десертов
+                                </p>
+                            </div>
+                        </div>
+                        <ul class="myinfo__grid">
+                            <li class="myinfo__grid_item">
+                                <div class="myinfo__grid-img">
+                                    <img src="/img/icons/hat-2.svg" alt="">
+                                </div>
+                                <p class="myinfo__grid-text">
+                                    Живое общение с наставниками и одногруппниками
+                                </p>
+                            </li>
+                            <li class="myinfo__grid_item">
+                                <div class="myinfo__grid-img">
+                                    <img src="/img/icons/hat-2.svg" alt="">
+                                </div>
+                                <p class="myinfo__grid-text">
+                                    Предоставление всех необходимых материалов
+                                </p>
+                            </li>
+                            <li class="myinfo__grid_item">
+                                <div class="myinfo__grid-img">
+                                    <img src="/img/icons/hat-2.svg" alt="">
+                                </div>
+                                <p class="myinfo__grid-text">
+                                    Небольшие группы до 6 человек
+                                </p>
+                            </li>
+                            <li class="myinfo__grid_item">
+                                <div class="myinfo__grid-img">
+                                    <img src="/img/icons/hat-2.svg" alt="">
+                                </div>
+                                <p class="myinfo__grid-text">
+                                    Большие аудитории для обучения
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            >
+        </main>
         <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
@@ -137,34 +203,34 @@
                             </ul>
                         </address>
                     </div>
-                        <div class="footer__col">
-                            <ul class="footer__col-list">
-                                <li class="footer__col-item">
-                                    <a href="#" class="footer__col-link">
-                                        Программа обучения
-                                    </a>
-                                </li>
-                                <li class="footer__col-item">
-                                    <a href="#" class="footer__col-link">
-                                        Галерея
-                                    </a>
-                                </li>
-                                <li class="footer__col-item">
-                                    <a href="#" class="footer__col-link">
-                                        Отзывы
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="footer__col">
+                        <ul class="footer__col-list">
+                            <li class="footer__col-item">
+                                <a href="#" class="footer__col-link">
+                                    Программа обучения
+                                </a>
+                            </li>
+                            <li class="footer__col-item">
+                                <a href="#" class="footer__col-link">
+                                    Галерея
+                                </a>
+                            </li>
+                            <li class="footer__col-item">
+                                <a href="#" class="footer__col-link">
+                                    Отзывы
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="footer__contact">
                         <ul class="footer__contact-list">
                             <li class="footer__contact-iteam">
-                                    <img src="./img/icons/ph_clock.svg" alt="">
-                                    ПН-ПТ 10:00-20:00
+                                <img src="./img/icons/ph_clock.svg" alt="">
+                                ПН-ПТ 10:00-20:00
                             </li>
                             <li class="footer__contact-iteam">
-                                    <img src="./img/icons/carbon_location.svg" alt="">
-                                    г. Москва, ул. Землянская, 9Б
+                                <img src="./img/icons/carbon_location.svg" alt="">
+                                г. Москва, ул. Землянская, 9Б
                             </li>
                         </ul>
                     </div>
@@ -183,8 +249,34 @@
                 </div>
             </div>
         </footer>
+    </div>
+    <div class="modal modal--opened">
+        <div class="modal__window">
+            <button class="modal__close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.75" y="0.75" width="22.5" height="22.5" rx="11.25" stroke="#E1D9E1" stroke-width="1.5" />
+                    <path
+                        d="M6.75781 17.2433L12.0008 12.0003L17.2438 17.2433M17.2438 6.75732L11.9998 12.0003L6.75781 6.75732"
+                        stroke="#E1D9E1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <img class="modal__img" src="/img/decor/cupcakes-modal.png" alt="">
+            <h3 class="modal__title">
+                Удиви своих близких вкусными капкейками
+            </h3>
+            <p class="modal__text">
+                Оставь свой e-mail, и мы вышлем рецепт на почту
+            </p>
+            <form class="modal__form">
+                <label class="modal__form-label field">
+                    <input class=" field__input" type="email" placeholder="E-mail">
+                    <span>Введите E-mail</span>
+                </label>
+                <button class="button" type="submit">Получить подарок</button>
+            </form>
         </div>
     </div>
+
     <script src="./js/fslightbox.js"></script>
     <script src="./js/main.js"></script>
 </body>
